@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans antialiased font-normal text-white bg-black;
+  }
+}
+
+@layer components {
+  .button {
+    @apply inline-block px-6 py-3 text-xs border rounded;
+  }
+  .button-secondary {
+    @apply border-white;
+  }
+
+  .card {
+    @apply max-w-md p-8 px-6 rounded cursor-pointer bg-dark-gray hover:bg-blue;
+  }
+  .card-header {
+    @apply my-4 text-2xl font-bold;
+  }
+}
+
+.text-shadow-white {
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
